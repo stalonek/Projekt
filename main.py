@@ -1,12 +1,7 @@
-from Class_bank_account import Account
-from decimal import Decimal
+from Time_class import Time
 
-user1 = Account('Sylwester', Decimal('120000'))
-print(user1.balance)
+wake_up = Time()
+print(wake_up)
 
-user1.deposit(123)
-print(user1.balance)
-
-user1.withdraw(100000)
-print(user1.balance)
-
+wake_up.time = (1,2,30)
+print(wake_up.time)
